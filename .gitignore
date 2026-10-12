@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+models/*.task
+models/*.download
+.ruff_cache/

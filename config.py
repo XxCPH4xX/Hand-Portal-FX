@@ -1,0 +1,23 @@
+from pathlib import Path
+
+CAMERA_INDEX = 1  # This Mac: 0 = OBS Virtual Camera, 1 = FaceTime HD Camera.
+FRAME_WIDTH = 1280
+FRAME_HEIGHT = 720
+DETECTION_WIDTH = 640
+SHOW_FPS = False
+SHOW_LANDMARKS = False
+
+MODEL_PATH = Path(__file__).resolve().parent / "models" / "hand_landmarker.task"
+HAND_CONFIDENCE = 0.6
+PORTAL_SMOOTHING = 0.45  # EMA weight at 30 FPS; adjusted for elapsed time.
+MIN_PORTAL_AREA = 700.0
+TRACKING_HOLD = 0.25
+TRACKING_FADE = 0.35
+GESTURE_DWELL = 0.08
+GESTURE_RELEASE = 0.12
+GESTURE_COOLDOWN = 0.35
+PINCH_CLOSE_RATIO = 0.23
+PINCH_RELEASE_RATIO = 0.42
+PARTICLE_COUNT = 24
+GLOW_INTENSITY = 0.7
+
